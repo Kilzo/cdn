@@ -1,0 +1,33 @@
+avatar:
+  url: /images/avatar.jpg # 你的头像图片地址
+  rounded: true
+  opacity: 1
+
+#背景色
+colors:
+  primary: "#6200ee"
+  # bg: "#F5F5F5"
+  selection_bg: "#8e71c1" # 选取文字时的背景色
+  # 标签云中标签的起始色和结束色
+  # tag_start_color:
+  # tag_end_color:
+
+#tags
+tags:
+  Vue: "#4fc08d"
+  Hexo: "#0E834D"
+  CSS: "#5298d1"
+  Node.js: "#026E00"
+  Git: "#F14E32"
+  React: "#61dafb"
+  Python: "#3776ab"
+  PHP: "#8892BF"
+  VS Code: "#0066B8"
+  JavaScript: "#F4DF4F"
+  TypeScript: "#317AC6"
+  Laravel: "#F4645F"
+  
+#categories
+categories:
+  笔记: dimgray
+  
