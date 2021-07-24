@@ -111,9 +111,23 @@ live2d:
     scriptFrom: local
     model: 
         use: live2d-widget-model-hijiki #模型选择
-    display: 
-        position: right  #模型位置
-        width: 150       #模型宽度
-        height: 300      #模型高度
+display: 
+    position: right  #模型位置
+    width: 150       #模型宽度
+    height: 300      #模型高度
     mobile: 
         show: false      #是否在手机端显示
+
+# 关闭 highlight
+#highlight:
+#    enable: false
+# 启用 prism
+#prismjs:
+#    enable: true
+#    preprocess: true
+#    line_number: false
+#    tab_replace: ""
+
+# URL
+## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+#url: https://www.yunyoujun.cn

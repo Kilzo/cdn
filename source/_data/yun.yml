@@ -1,7 +1,13 @@
 avatar:
-  url: /images/avatar.jpg # 你的头像图片地址
+  enable: true
+  url: /images/avatar.jpg
   rounded: true
   opacity: 1
+  mickey_mouse: false
+  status:
+    enable: true
+    emoji: 😭
+    message: 不想上学
 
 #背景色
 colors:
@@ -30,4 +36,268 @@ tags:
 #categories
 categories:
   笔记: dimgray
+
+#首页标语动画
+banner:
+  enable: true
+  title: Kilzo的小屋
+  src: /js/ui/banner.js
+  border: true             #是否开启标语中字符的左右边框
+  cloud:                   #在首页下方显示流动的云
+    enable: true
+    color: "white"         #自定义色彩
+  go_down:                 #向下箭头按钮（翻页
+    enable: true
+    icon: icon-arrow-down-s-line
+
+#公告
+notice:
+  enable: true
+  content: Hello.
+
+#UI
+# 可选 light | dark | auto | time
+mode: auto
+
+#字体
+font:
+  cdn:
+    enable: false
+    lib:
+      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
+  serif:
+    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    weight: 900
+  sans_serif:
+    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    weight: 400
+  monospace:
+    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
+
+#图片背景（透明度等
+bg_image:
+  enable: true
+  url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
+  # dark:
+  # blur: 30px # 设置背景模糊程度
+  opacity: 0.8
+
+#搜索背景
+search:
+  modal: true
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
+  dark_bg_image: xxx
+  # placeholder:
+
+#随机多边形背景
+trianglify:
+  enable: false
+  cellSize: 75     #多边形王网格尺寸
+  width: 800
+  height: 600
+  palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'   #调色盘
+  opacity: 0.5
+
+#烟花
+fireworks:
+  enable: true
+  colors:
+    - "102, 167, 221"
+    - "62, 131, 225"
+    - "33, 78, 194"
+
+#ScrollReveal
+scrollreveal:
+  enable: true
+  targets:           #targets: 为元素选择器对应的元素添加滚动浮现效果
+    - .post-card
+    - .post-content img
+
+#鼠标光标
+cursor:
+  enable: true
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+
+#侧边栏
+sidebar:
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
+  bg_position: bottom 3rem center
+  tagcloud:      #在侧边栏显示 Hexo 原生标签页
+    enable: false
+    amount: 20   #显示标签数量
+
+#导航
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  list:
+    - type: archives          #type: 是否为 archives/categories/tags 等类型，会自动匹配此类型标题及显示对应数量。留空则为其他普通链接。
+      path: /archives/
+      icon: icon-archive-line
+    - type: categories
+      path: /categories/
+      icon: icon-folder-2-line
+    - type: tags
+      path: /tags/
+      icon: icon-price-tag-3-line
+    # - path: https://www.yunyoujun.cn
+    #   icon: icon-cloud-line
+    #   count: 你猜
+  custom:
+    title: 文档              
+    path: https://yun.yunyoujun.cn
+    icon: icon-settings-line
+
+#页面链接
+pages:
+  - name: 我的小伙伴们
+    url: /links/
+    icon: icon-genderless-line
+    color: dodgerblue
+
+#文章
+post_card:
+  opacity: 0.8
+
+
+types:
+  link:
+    color: blue
+    icon: icon-external-link-line
+  bilibili:
+    color: "#FF8EB3"
+    icon: icon-bilibili-line
+  douban:
+    color: "#007722"
+    icon: icon-douban-line
+  github:
+    color: black
+    icon: icon-github-line
+  netease-cloud-music:
+    color: "#C10D0C"
+    icon: icon-netease-cloud-music-line
+  notion:
+    color: black
+    icon: icon-notion
+  twitter:
+    color: "#1da1f2"
+    icon: icon-twitter-line
+  wechat:
+    color: "#1AAD19"
+    icon: icon-wechat-2-line
+  weibo:
+    color: "#E6162D"
+    icon: icon-weibo-line
+  yuque:
+    color: "#25b864"
+    icon: icon-yuque
+  zhihu:
+    color: "#0084FF"
+    icon: icon-zhihu-line
   
+
+#信息
+post_meta:
+  item_text: false  #是否显示文字（如：发表于、更新于，若关闭则只显示图标与时间信息）
+  created_at: true  #是否显示创建时间
+  updated_at: true  #是否显示更新时间
+  categories: true  #是否显示种类
+  tags: true        #是否显示标签
+
+#目录
+toc:
+  list_number: true
+  max_depth: 6
+  min_depth: 1
+  placeholder: 很遗憾，咱没写啥目录
+  collapse: false
+
+#编辑链接
+post_edit:
+  enable: true
+  url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
+
+#代码高亮
+#codeblock:      
+#  copy_btn: true    #开启一键复制按钮
+#  prismjs:
+#    light: default
+#    dark: tomorrow
+
+#版权
+creative_commons:
+  license: by-nc-sa   #设置证书 (by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero)
+  post: true          #在每篇文章末尾显示
+  language: deed.zh   #设置语言 (deed.zh | deed.en | deed.ja ｜ ...)
+  clipboard: false    # 是否在复制文章时，在剪贴板中追加版权信息（默认关闭）
+
+#图片懒加载
+lazyload:
+  enable: true
+
+#打赏
+reward:
+  enable: true
+  icon: icon-hand-coin-line
+  comment: I'm so cute. Please give me money.
+  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  methods:
+    - name: 支付宝
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+      color: "#00A3EE"
+      icon: icon-alipay-line
+    - name: QQ 支付
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+      color: "#12B7F5"
+      icon: icon-qq-line
+    - name: 微信支付
+      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+      color: "#2DC100"
+      icon: icon-wechat-pay-line
+
+#页脚
+footer:
+  since: 1997
+  icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#0078E7"
+    since: 2016
+  #icon:
+  #  name: icon-cloud-line
+  #  animated: true
+  #  color: "#0078E7"
+  #  url: https://sponsors.yunyoujun.cn
+  #  title: 云游君的赞助者们
+  #powered:
+  #  enable: true
+   #beian:
+   # enable: true
+   # icp: 苏ICP备xxxxxxxx号
+  live_time:
+    enable: false
+    prefix: 本博客已萌萌哒地运行
+    suffix: (●'◡'●)
+    start_time: "2019-04-12T00:00:00"
+  support:
+    enable: true
+    title: 又拍云
+    link: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
+    logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
+    prefix: 本网站由
+    suffix: 提供 CDN 加速
+  custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
+
+#Say
+say:
+  enable: true
+  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json  #远程 JSON API
+  src: /js/say.js     #调用的 js 文件，最好不要修改（你也可以仿照其结构自己写，来加载想要的 JSON 格式。）
+  # https://developer.hitokoto.cn/sentence/
+  hitokoto:
+    enable: true    #是否开启 一言 (opens new window)，开启一言时，将默认覆盖 say.api
+    api: https://v1.hitokoto.cn   #你可以参考 语句接口｜一言 (opens new window)来根据你的想法使用一言 API
+
