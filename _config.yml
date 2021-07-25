@@ -103,7 +103,7 @@ theme: yun
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/Kilzo/Kilzo.github.io.git 
+  repo: https://github.com/Kilzo/Kilzo.github.io
   branch: master # 默认使用 master 分支
   message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
 live2d:
@@ -131,3 +131,7 @@ display:
 # URL
 ## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
 #url: https://www.yunyoujun.cn
+image: 
+    post_asset_folder: true #我只设置了这个，没设置下边两行也好使。
+    filter_image:
+      helog: true
