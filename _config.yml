@@ -14,11 +14,11 @@ timezone: Asia/Shanghai
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
-permalink: :year/:month/:day/:title/
-permalink_defaults:
+#permalink: :year/:month/:day/:title/
+#permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -103,7 +103,7 @@ theme: yun
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/Kilzo/Kilzo.github.io
+  repo: https://github.com/Kilzo/Kilzo.github.io.git
   branch: master # 默认使用 master 分支
   message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
 live2d:
@@ -135,3 +135,42 @@ image:
     post_asset_folder: true #我只设置了这个，没设置下边两行也好使。
     filter_image:
       helog: true
+
+#播放器
+#aplayer:
+#  cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
+#  style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
+#  meting: true
+#  meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+aplayer:
+  #全局播放
+  global: false
+  meting: true
+  # https://github.com/metowolf/MetingJS/tree/v1.2#option
+  widget:
+    enable: false
+    autoplay: false
+    # theme: "#2980b9"
+    loop: all
+    order: list
+    preload: auto
+    volume: 0.7
+    mutex: true
+    lrcType: 0
+    listFolded: false
+    listMaxHeight: 340px
+    audio:
+      - name: 星宿计时
+        artist: 杉田朗/洛天依
+        url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
+        cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
+    meting:
+      enable: true
+      id: 308168565
+      server: netease
+      type: playlist
+
+#数学公式
+katex:
+  copy_tex: true
+  global: false

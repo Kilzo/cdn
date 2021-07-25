@@ -7,7 +7,75 @@ avatar:
   status:
     enable: true
     emoji: 😭
-    message: 不想上学
+    message: 添加功能中
+
+# Social Links.
+social:
+  #- name: RSS
+    # set rss in your root config
+    # https://github.com/hexojs/hexo-generator-feed
+  #  link: /atom.xml # config.feed.path
+  #  icon: icon-rss-line
+  #  color: orange
+  #- name: QQ 群 1050458482
+    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
+  #  link: https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi
+  #  icon: icon-qq-line
+  #  color: "#12B7F5"
+  - name: GitHub
+    link: https://github.com/Kilzo
+    icon: icon-github-line
+    color: "#6e5494"
+  #- name: 微博
+  #  link: https://weibo.com/jizhideyunyoujun
+  #  icon: icon-weibo-line
+  #  color: "#E6162D"
+  #- name: 豆瓣
+  #  link: https://www.douban.com/people/yunyoujun/
+  #  icon: icon-douban-line
+  #  color: "#007722"
+  - name: 网易云音乐
+    link: https://music.163.com/#/user/home?id=247102977
+    icon: icon-netease-cloud-music-line
+    color: "#C20C0C"
+  #- name: 知乎
+  #  link: https://www.zhihu.com/people/yunyoujun/
+  #  icon: icon-zhihu-line
+  #  color: "#0084FF"
+  #- name: 哔哩哔哩
+  #  link: https://space.bilibili.com/1579790
+  #  icon: icon-bilibili-line
+  #  color: "#FF8EB3"
+  # - name: POPI
+  #   link: https://www.popiapp.cn/elpsycn
+  #   icon: icon-questionnaire-line
+  #   color: "#525252"
+  #- name: 微信公众号
+  #  link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+  #  icon: icon-wechat-2-line
+  #  color: "#1AAD19"
+  #- name: Twitter
+  #  link: https://twitter.com/YunYouJun
+  #  icon: icon-twitter-line
+  #  color: "#1da1f2"
+  # - name: Telegram
+  #   link: https://t.me/YunYouJun
+  #   icon: icon-telegram-line
+  #   color: "#0088CC"
+  #- name: Telegram Channel
+  #  link: https://t.me/elpsycn
+    # icon: icon-telegram-fill
+  #  icon: icon-telegram-line
+  #  color: "#0088CC"
+  - name: E-Mail
+    link: mailto:911402070@qq.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+  #- name: Travelling
+  #  link: https://travellings.link
+  #  icon: icon-train-line
+  #  color: black
+
 
 #背景色
 colors:
@@ -52,7 +120,7 @@ banner:
 
 #公告
 notice:
-  enable: true
+  enable: false
   content: Hello.
 
 #UI
@@ -78,8 +146,8 @@ font:
 bg_image:
   enable: true
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
-  #dark:
-  #blur: 0px # 设置背景模糊程度
+  dark: /images/background.jpg                                 #暗色背景
+  blur: 0px # 设置背景模糊程度
   opacity: 9.99
 
 #搜索背景
@@ -148,8 +216,12 @@ menu:
     #   count: 你猜
   custom:
     title: 文档              
-    path: https://yun.yunyoujun.cn
+    path: https://www.kilzo.net         #暂时不知道怎么用
     icon: icon-settings-line
+
+# archive
+archive:
+  last_word: 没有更多的黑历史了
 
 #页面链接
 pages:
@@ -157,6 +229,10 @@ pages:
     url: /links/
     icon: icon-genderless-line
     color: dodgerblue
+
+girls:
+  enable: flase #貌似是无效代码
+
 
 #文章
 post_card:
@@ -217,15 +293,15 @@ toc:
 
 #编辑链接
 post_edit:
-  enable: true
-  url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
+  enable: false
+  url: https://github.com/Kilzo
 
 #代码高亮
-#codeblock:      
-#  copy_btn: true    #开启一键复制按钮
-#  prismjs:
-#    light: default
-#    dark: tomorrow
+codeblock:      
+  copy_btn: true    #开启一键复制按钮
+  prismjs:
+    light: default
+    dark: tomorrow
 
 #版权
 creative_commons:
@@ -246,15 +322,15 @@ reward:
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
     - name: 支付宝
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+      path: https://cdn.jsdelivr.net/gh/Kilzo/cdn/blob/main/img/donate/alipay-qrcode.jpg
       color: "#00A3EE"
       icon: icon-alipay-line
-    - name: QQ 支付
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
-      color: "#12B7F5"
-      icon: icon-qq-line
+    #- name: QQ 支付
+    #  path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+    #  color: "#12B7F5"
+    #  icon: icon-qq-line
     - name: 微信支付
-      path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+      path: https://cdn.jsdelivr.net/gh/Kilzo/cdn/blob/main/img/donate/wechat-qrcode.jpg
       color: "#2DC100"
       icon: icon-wechat-pay-line
 
@@ -283,7 +359,7 @@ footer:
     suffix: (●'◡'●)
     start_time: "2019-04-12T00:00:00"
   support:
-    enable: true
+    enable: false
     title: 又拍云
     link: https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
     logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
@@ -301,3 +377,95 @@ say:
     enable: true    #是否开启 一言 (opens new window)，开启一言时，将默认覆盖 say.api
     api: https://v1.hitokoto.cn   #你可以参考 语句接口｜一言 (opens new window)来根据你的想法使用一言 API
 
+#标签
+wordcloud:
+  enable: true
+
+#评论区
+comment:
+  enable: true
+  tips:
+    - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+    - 若没有本文 Issue，您可以使用 Comment 模版新建。
+  candidates:     # 候选评论系统，默认不启用。配置后可切换多个评论系统，默认第一位为默认显示的评论。（你须确保 candidates 中的评论对应 enable 已开启）
+    - valine
+    - utterances  
+
+#Github Discussions
+github_discussions:
+  enable: true
+  username: Kilzo
+  repository: Kilzo.github.io
+
+#搜索引擎
+# search
+engine_search:
+  enable: true
+  href: "https://www.google.com/search?q=site:"
+  # href: "https://www.baidu.com/s?wd=site:"
+  # href: "https://www.bing.com/search?q=site:"
+  domain: kilzo.net
+
+#字数统计
+wordcount:
+  enable: true
+  count: true  #字数统计
+  time: true   #阅读时间
+
+# custom your assets in head
+head:
+  cdn:
+    pre: ""
+    css:
+    js:
+      base:
+      async:
+      defer:
+
+#math
+katex:
+  copy_tex: true
+  global: false
+
+# plugins
+aplayer:
+  global: false
+  meting: true
+  # https://github.com/metowolf/MetingJS/tree/v1.2#option
+  widget:
+    enable: false
+    autoplay: false
+    # theme: "#2980b9"
+    loop: all
+    order: list
+    preload: auto
+    volume: 0.7
+    mutex: true
+    lrcType: 0
+    listFolded: false
+    listMaxHeight: 340px
+    audio:
+      - name: 星宿计时
+        artist: 杉田朗/洛天依
+        url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
+        cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
+    meting:
+      enable: true
+      id: 308168565
+      server: netease
+      type: playlist
+
+# special
+mourn:
+  enable: false
+  days:
+    - "4-4"
+    - "9-18"
+
+#文章浏览量
+leancloud_visitors:
+  enable: false
+  app_id: 933YC5JPihaVOTuEtrnUIMOB-gzGzoHsz
+  app_key: f2WqeO9QhkB9gt353noCthQY
+  # Required for apps from CN region
+  server_url: https://933yc5jp.lc-cn-n1-shared.com
