@@ -182,5 +182,5 @@ backup:
   theme: yun
   message: "增加功能中"
   repository:
-    github: git@github.com:Kilzo/Kilzo.github.io.git,bakup
+    github: git@github.com:Kilzo/Kilzo.github.io.git,hexo
     #coding: git@git.dev.tencent.com:Kilzo/Kilzo.git,hexo
