@@ -19,7 +19,7 @@ date: 2021-07-26
 
 2、设置Hexo为默认分支（default）（不知道怎么设的可以百度，建议自己摸索，弄明白GitHub的使用）；**同时底部也给出了创建分支的方法**。
 
-3、将博客仓库clone至本地(`git clone  xxx.github.io `) ，将之前的Hexo文件夹中的
+3、将博客仓库clone至本地(`git clone git@github.com:XXXXX/XXXXX.github.io.git `) ，将之前的Hexo文件夹中的
  `_config.yml`，`themes/`，`source`，`scffolds/`，`package.json`，`.gitignore`复制到你克隆下来的仓库文件夹，即Username.github.io；（Username是你自己的用户名）
 
 4、将themes/next/中的`.git/`删除，否则无法将主题文件夹push；
@@ -28,7 +28,7 @@ date: 2021-07-26
 
 ![1](关于hexo的备份/1.jpg)
 
-6、执行`git add`，`git commit -m "提交文件"`，`git push origin Hexo`来提交Hexo网站源文件；
+6、执行`git add .`，`git commit -m "提交文件"`，`git push origin Hexo`来提交Hexo网站源文件；
 
 > **注意**：
 >
