@@ -322,7 +322,7 @@ reward:
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
     - name: 支付宝
-      path: https://cdn.jsdelivr.net/gh/Kilzo/cdn/blob/main/img/donate/alipay-qrcode.jpg
+      path: https://cdn.jsdelivr.net/gh/Kilzo/cdn/img/donate/alipay-qrcode.jpg
       color: "#00A3EE"
       icon: icon-alipay-line
     #- name: QQ 支付
@@ -330,7 +330,7 @@ reward:
     #  color: "#12B7F5"
     #  icon: icon-qq-line
     - name: 微信支付
-      path: https://cdn.jsdelivr.net/gh/Kilzo/cdn/blob/main/img/donate/wechat-qrcode.jpg
+      path: https://cdn.jsdelivr.net/gh/Kilzo/cdn/img/donate/wechat-qrcode.jpg
       color: "#2DC100"
       icon: icon-wechat-pay-line
 
