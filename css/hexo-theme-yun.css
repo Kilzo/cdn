@@ -175,7 +175,7 @@ details[open] summary {
   --hty-bg-color: #f5f5f5;
   --hty-text-color: #333;
   --hty-secondary-text-color: #555;
-  --post-block-bg-color: #fff;
+  --post-block-bg-color: "";
   --smc-link-color: #6200ee;
 }
 html {
@@ -875,7 +875,7 @@ input {
   color: var(--hty-text-color);
   margin: 0 1rem;
   padding: 1rem;
-  background-color: var(--post-block-bg-color);
+  background-color: "";
 }
 @media screen and (max-width: 768px) {
   .post-block {
@@ -953,6 +953,7 @@ input {
   padding: 0.5rem 1rem;
   border-left: 4px solid #ff5252;
   background-color: var(--hty-bg-color);
+  opacity: 0.5;
   list-style: none;
   word-break: break-all;
   position: relative;
@@ -1187,8 +1188,8 @@ input {
   transition-property: all;
   transition-duration: 0.3s;
   transition-delay: 0s;
-  background-color: rgba(255,255,255,0.8);
-  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255,0.4);
+  box-shadow: 0 0 10px rgba(255,255,255,0.9);
 /* tag 容器 */
 }
 .post-card:hover {
@@ -1266,7 +1267,11 @@ input {
   height: 1.5rem;
 }
 .code-container {
+  opacity: 0.4;
   position: relative;
+}
+.code-container:hover {
+  opacity: 0.8;
 }
 .code-container:hover .copy-btn {
   opacity: 1;
@@ -1760,8 +1765,8 @@ input {
   bottom: 0;
   left: 0;
   width: 20rem;
-  background-color: #fff;
-  background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg");
+  background-color: '';
+  background-image: '';
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom 3rem center;
@@ -2026,7 +2031,7 @@ input {
 #comment {
   margin: 0 1rem;
   padding: 1rem;
-  background-color: var(--post-block-bg-color);
+  background-color: '';
 }
 @media screen and (max-width: 768px) {
   #comment {
@@ -2100,7 +2105,7 @@ input {
     background-color: var(--banner-char-color);
   }
   :root:not([data-user-color-scheme]) .sidebar {
-    background-color: rgba(27,31,46,0.95);
+    background-image: '';
     background-image: none;
   }
   :root:not([data-user-color-scheme]) .post-card {
@@ -2168,7 +2173,7 @@ input {
   background-color: var(--banner-char-color);
 }
 [data-user-color-scheme='dark'] .sidebar {
-  background-color: rgba(27,31,46,0.95);
+  background-image: '';
   background-image: none;
 }
 [data-user-color-scheme='dark'] .post-card {
