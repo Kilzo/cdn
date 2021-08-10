@@ -191,7 +191,7 @@ body::before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url("https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.1/background/background-light.jpg");
+  background-image: url("https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.2/background/background-light.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2095,7 +2095,7 @@ input {
     color: var(--hty-text-color);
   }
   :root:not([data-user-color-scheme]) body::before {
-    background-image: url("https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.1/background/background.jpg");
+    background-image: url("https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.2/background/background.jpg");
   }
   :root:not([data-user-color-scheme]) .char {
     background-color: rgba(0,0,0,0.5);
@@ -2163,7 +2163,7 @@ input {
   color: var(--hty-text-color);
 }
 [data-user-color-scheme='dark'] body::before {
-  background-image: url("https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.1/background/background.jpg");
+  background-image: url("https://cdn.jsdelivr.net/gh/Kilzo/cdn@0.2/background/background.jpg");
 }
 [data-user-color-scheme='dark'] .char {
   background-color: rgba(0,0,0,0.5);
